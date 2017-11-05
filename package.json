@@ -1,0 +1,32 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "App built with node, mysql, handlebars and orms - allows users to input names of burgers and devour them later as they wish",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frannypax/Eat-Da-Burger.git"
+  },
+  "keywords": [
+    "express",
+    "handlebars",
+    "orm",
+    "mysql"
+  ],
+  "author": "F.A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frannypax/Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/frannypax/Eat-Da-Burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0"
+  }
+}
