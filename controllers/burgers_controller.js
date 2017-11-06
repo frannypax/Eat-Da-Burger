@@ -41,4 +41,4 @@ router.post("/add/", urlencodedParser, function(req, res){
 	});
 });
 
-module.exports = routes;
+module.exports = router;
