@@ -1,0 +1,12 @@
+.eaten{
+	color:red;
+	font-size: 2em;
+}
+.not-eaten{
+	color:green;
+	font-size: 2em;
+}
+.add{
+	color:black;
+	font-size: 2em;
+}

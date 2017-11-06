@@ -10,7 +10,7 @@ app.use(express.static("views/public/js"));
 app.use(express.static("views/public/css"));
 app.use(express.static("views/public/img"));
 
-app.use(bodyParser.urlencode({
+app.use(bodyParser.urlencoded({
 	extended:false
 }));
 app.use(methodOverride("_method"));
