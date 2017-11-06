@@ -6,7 +6,7 @@
 				{{#each data}}
 				{{#if this.devoured}}
 					<li class="list-group-item">
-						<form action = "/delete/{{this.burger_name}}" method="POST">
+						<form action = "/delete/{{this.burger_name}}" method="post">
 							<button class = "eaten" type = "submit">Delete {{this.burger_name}}
 						</form>
 					</li>
@@ -21,7 +21,7 @@
 		{{#if this.devoured}}
 			{{else}}
 				<li class="list-group-item">
-					<form action="/eat/{{this.burger_name}}" method="POST">
+					<form action="/eat/{{this.burger_name}}" method="post">
 						<button class="not-eaten" type="submit">Eat {{this.burger_name}}
 						</button>
 					</form>
@@ -33,7 +33,7 @@
 <div class="col-sm-4">
 	<ul class="list-group add">
 		<li class="list-group-item">
-			<form action="/add" method="POST">
+			<form action="/add" method="post">
 				<input name="burgertoadd" placeholder="">
 				</input>
 				<button class="add" type="submit">
