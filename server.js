@@ -1,5 +1,11 @@
 
-const = require("express");
-const = require("method-override");
-const = require("body-parser");
+const express = require("express");
+const methodOverride = require("method-override");
+const bodyParser = require("body-parser");
 
+var app = express();
+var PORT = process.env.PORT || 8080;
+
+app.listen(PORT, function(){
+	console.log("App listening on port: "+ PORT);
+})
