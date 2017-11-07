@@ -7,18 +7,12 @@ var orm = {
         var queryString = 'SELECT * FROM ' + tableInput + ';';
         connection.query(queryString, function(err, result) {
             if (err) throw err;
+            //console.log(result);
             cb(result);
         });
     },
     addBurger: function(tableInput, burger_name, cb) {
         var queryString = "INSERT INTO " + tableInput + "(burger_name, devoured) VALUES ('" + burger_name + "', false );";
-        connection.query(queryString, function(err, result) {
-            if (err) throw err;
-            cb(result);
-        });
-    },
-    deleteBurger: function(tableInput, burger_name, cb) {
-        var queryString = "DELETE FROM " + tableInput + " WHERE burger_name = '" + burger_name + "';";
         connection.query(queryString, function(err, result) {
             if (err) throw err;
             cb(result);
@@ -31,6 +25,14 @@ var orm = {
             cb(result);
         });
     },
+    deleteBurger: function(tableInput, burger_name, cb) {
+        var queryString = "DELETE FROM " + tableInput + " WHERE burger_name = '" + burger_name + "';";
+        connection.query(queryString, function(err, result) {
+            if (err) throw err;
+            cb(result);
+        });
+    }
+   
 };
 
 module.exports = orm;
