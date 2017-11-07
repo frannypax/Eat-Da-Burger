@@ -24,7 +24,7 @@ USE `burgers_db`;
 DROP TABLE IF EXISTS `burgers`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `burgers` (
+CREATE TABLE `burgers_table` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `burger_name` varchar(255) NOT NULL,
   `devoured` tinyint(1) DEFAULT '0',
