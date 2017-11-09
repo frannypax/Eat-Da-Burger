@@ -17,7 +17,7 @@ var burger = {
 			cb(res)
 		});
 	},
-	add: function(burger_name, cb){
+	add:function(burger_name, cb){
 		orm.addBurger("burgers_table", burger_name, function(res){
 			cb(res)
 		});
