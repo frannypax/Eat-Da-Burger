@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<link rel="stylesheet" type="text/css" href="burger_style.css">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  		<!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata"> -->
+		<title>Eat-Da-Burger</title>
+		<meta charset="UTF-8">
+	</head>
+	<body style="background:#FFFF33">
+	<h1 style="text-align: center">Eat-Da-Burger</h1> 
+		<img src="background.jpg"> 
+		<div class="row">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-4 list-group eaten">
+								<!-- {{#each data}}
+								{{#if this.devoured}} -->
+								<!-- <ul class="list-group-item"> -->
+									<form action = "/delete/{{this.burger_name}}" method="post">
+										<button class = "btn btn-danger eaten" type = "submit"><!-- Delete {{this.burger_name}} -->
+										</button>
+									</form>
+									<br>
+								<!-- </ul> -->
+								<!-- {{/if}}
+								{{/each}} -->
+							</div>
+							<div class="col-sm-4"></div>
+							<div class="col-sm-4"></div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-4"></div>
+							<div class="col-sm-4"></div>
+							<div class="col-sm-4 list-group not-eaten">
+								<!-- {{#each data}}
+								{{#if this.devoured}}
+									{{else}} -->
+										<!-- <ul class="list-group-item"> -->
+											<form action="/eat/{{this.burger_name}}" method="post">
+												<div class="not-eaten text-center" style="background-color:green; color: black"><!-- {{this.burger_name}} -->
+													
+												</div>
+												<button class="btn btn-primarynot-eaten" type="submit">Devour <!-- {{this.burger_name}} -->
+												</button>
+											</form>
+											<br>
+										<!-- </ul> -->
+								<!-- {{/if}}
+								{{/each}} -->
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<form action="/add" method="post">
+				
+						<!-- <button type="button" class="add btn-lg btn-primary" type="submit">
+							Add a burger
+						</button>
+						<input name="burgertoadd" placeholder="">
+						</input> -->
+						<div class="input-group">
+      						<input type="text" name="burgertoadd" class="form-control" placeholder="Burger Name">
+      						<span class="input-group-btn">
+        					<button class="btn btn-primary add" type="submit">Add Burger</button>
+      						</span>
+    					</div>
+				</form>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+
+	</div>
+	
+</div>
+	</body>
+</html>
