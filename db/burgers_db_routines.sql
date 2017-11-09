@@ -18,31 +18,6 @@ USE `burgers_db`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `burgers`
---
-
-DROP TABLE IF EXISTS `burgers`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `burgers_table` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `burger_name` varchar(255) NOT NULL,
-  `devoured` tinyint(1) DEFAULT '0',
-  `date` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `burgers`
---
-
-LOCK TABLES `burgers` WRITE;
-/*!40000 ALTER TABLE `burgers` DISABLE KEYS */;
-/*!40000 ALTER TABLE `burgers` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Dumping routines for database 'burgers_db'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +30,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-05  7:38:02
+-- Dump completed on 2017-11-07 13:47:47

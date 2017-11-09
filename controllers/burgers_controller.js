@@ -20,14 +20,14 @@ router.get("/", function(req, res){
 	});
 });
 
-router.post("/delete/:burger_name", function(req, res){
+router.post("/delete/: burger_name", function(req, res){
 	var burger_name = req.params.burger_name;
 	burger.delete(burger_name, function(data){
 		res.redirect("/");
 	});
 });
 
-router.post("/eat/:burger_name", function(req, res){
+router.post("/eat/: burger_name", function(req, res){
 	var burger_name = req.params.burger_name;
 	burger.eat(burger_name, function(data){
 		res.redirect("/");
